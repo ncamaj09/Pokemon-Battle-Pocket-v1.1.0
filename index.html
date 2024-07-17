@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Battle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="battle-container">
+        <div class="pokemon player">
+            <img src="" alt="Player's Pokémon" class="pokemon-image player-image">
+            <div class="pokemon-info">
+                <h2 class="pokemon-name">Player</h2>
+                <p class="pokemon-hp">HP: <span id="player-hp">0</span></p>
+                <p class="pokemon-level">Level: <span id="player-level">0</span></p>
+                <p class="pokemon-stats">Defense: <span id="player-defense">0</span>, Sp. Atk: <span id="player-sp-atk">0</span>, Sp. Def: <span id="player-sp-def">0</span>, Speed: <span id="player-speed">0</span></p>
+            </div>
+        </div>
+        <div class="pokemon opponent">
+            <img src="" alt="Opponent's Pokémon" class="pokemon-image">
+            <div class="pokemon-info">
+                <h2 class="pokemon-name">Opponent</h2>
+                <p class="pokemon-hp">HP: <span id="opponent-hp">0</span></p>
+                <p class="pokemon-level">Level: <span id="opponent-level">0</span></p>
+                <p class="pokemon-stats">Defense: <span id="opponent-defense">0</span>, Sp. Atk: <span id="opponent-sp-atk">0</span>, Sp. Def: <span id="opponent-sp-def">0</span>, Speed: <span id="opponent-speed">0</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <button class="move-button" data-move="move1">Move 1</button>
+        <button class="move-button" data-move="move2">Move 2</button>
+        <button class="move-button" data-move="move3">Move 3</button>
+        <button class="move-button" data-move="move4">Move 4</button>
+    </div>
+    <div class="battle-records">
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

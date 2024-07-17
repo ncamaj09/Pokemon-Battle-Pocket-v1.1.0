@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'PixelFont';
+    src: url('fonts/pixel-font.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('battle-bg.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'PixelFont', Arial, sans-serif;
+}
+
+.battle-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.pokemon {
+    text-align: center;
+}
+
+.pokemon-image {
+    width: 150px;
+    height: auto;
+    image-rendering: pixelated; /* Ensures pixel art is displayed correctly */
+}
+
+.player-image {
+    transform: scaleX(-1); /* Flips the player's Pokémon image */
+}
+
+.pokemon-info {
+    margin-top: 10px;
+}
+
+.pokemon-name {
+    font-size: 24px;
+    margin: 0;
+}
+
+.pokemon-hp, .pokemon-level, .pokemon-stats {
+    font-size: 18px;
+    color: #555;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.move-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.move-button[data-type="Fire"] {
+    background-color: #ff4500;
+}
+
+.move-button[data-type="Water"] {
+    background-color: #1e90ff;
+}
+
+.move-button[data-type="Grass"] {
+    background-color: #32cd32;
+}
+
+.move-button[data-type="Electric"] {
+    background-color: #ffd700;
+}
+
+.move-button[data-type="Normal"] {
+    background-color: #d3d3d3;
+}
+
+.move-button[data-type="Dragon"] {
+    background-color: #8a2be2;
+}
+
+.move-button[data-type="Dark"] {
+    background-color: #4b0082;
+}
+
+.move-button[data-type="Steel"] {
+    background-color: #b0c4de;
+}
+
+.move-button[data-type="Ground"] {
+    background-color: #deb887;
+}
+
+.move-button[data-type="Poison"] {
+    background-color: #9932cc;
+}
+
+.move-button[data-type="Ghost"] {
+    background-color: #5218fa;
+}
+
+.move-button[data-type="Psychic"] {
+    background-color: #800080;
+}
+
+.move-button[data-type="Fairy"] {
+    background-color: #dda0dd;
+}
+
+.move-button[data-type="Bug"] {
+    background-color: #8db600;
+}
+
+.move-button[data-type="Ice"] {
+    background-color: #afeeee;
+}
+
+.move-button[data-type="Fighting"] {
+    background-color: #a52a2a;
+}
+
+.move-button[data-type="Rock"] {
+    background-color: #737000;
+}
+
+.move-button[data-type="Flying"] {
+    background-color: #f2f3f4;
+}
+
+
+
+
+.battle-records {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
